@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(imagens/plantabaixateste.jpg);/*EDITAR IMAGEM DE FUNDO*/
+  color: #222;
+}
+
+/* CABEÇALHO */
+.cabecalho {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cabecalho .logo img {
+  height: 150px;
+  width: auto;
+}
+
+.cabecalho .menu a {
+  color: #000;
+  margin-left: 40px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cabecalho .menu a:hover {
+  color: #00c9a7;
+}
+
+.botao-menu {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* MENU MOBILE */
+.menu-mobile {
+  display: none;
+  flex-direction: column;
+  background: #333;
+  position: fixed;
+  top: 60px;
+  right: 0;
+  width: 200px;
+  border-radius: 8px 0 0 8px;
+  overflow: hidden;
+}
+
+.menu-mobile a {
+  color: #fff;
+  padding: 15px;
+  border-bottom: 1px solid #444;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.menu-mobile a:hover {
+  background: #444;
+}
+
+/* INÍCIO */
+.inicio {
+  height: 100vh;
+  background: url("imagens/capa.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.inicio .texto {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.inicio h1 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.botao {
+  display: inline-block;
+  background: #00c9a7;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.botao:hover {
+  background: #00a88a;
+}
+
+/* PROJETOS */
+.projetos {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.projetos h2 {
+  margin-bottom: 40px;
+  font-size: 1.8rem;
+}
+
+/* CARROSSEL */
+.carrossel {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.slides {
+  position: relative;
+}
+
+.slide {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.slide.ativo {
+  opacity: 1;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.legenda {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* BOTÕES DO CARROSSEL */
+.carrossel .botao {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.carrossel .botao:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#anterior {
+  left: 10px;
+}
+
+#proximo {
+  right: 10px;
+}
+
+/* INDICADORES */
+.indicadores {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.indicador {
+  height: 10px;
+  width: 10px;
+  background: #ccc;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.indicador.ativo {
+  background: #00c9a7;
+}
+
+/* CONTATO */
+.contato {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f0f0f0;
+}
+
+/* RODAPÉ */
+.rodape {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: #ccc;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .cabecalho .menu {
+    display: none;
+  }
+
+  .botao-menu {
+    display: block;
+  }
+
+  .inicio h1 {
+    font-size: 1.6rem;
+  }
+
+  .legenda {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rodrigo Germano | Eng. Civil</title>
+
+  <link rel="icon" href="imagens/logo.png" />
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+
+<body>
+  <!-- CABEÇALHO -->
+  <header class="cabecalho">
+    <div class="logo">
+      <img src="imagens/logo/logorodrigogermano.jpg" alt="Logo Rodrigo Germano" />
+    </div>
+    <nav class="menu">
+      <a href="#inicio">Início</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <button id="botao-menu" class="botao-menu">☰</button>
+  </header>
+
+  <!-- MENU MOBILE -->
+  <div id="menu-mobile" class="menu-mobile">
+    <a href="#inicio">Início</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contato">Contato</a>
+  </div>
+
+  <!-- SEÇÃO INÍCIO -->
+  <section id="inicio" class="inicio">
+    <div class="texto">
+      <h1>Engenharia Civil e Arquitetura Inteligente</h1>
+      <p>Projetos que unem técnica, estética e eficiência para transformar espaços.</p>
+      <a href="#projetos" class="botao">Ver Projetos</a>
+    </div>
+  </section>
+
+  <!-- SEÇÃO PROJETOS -->
+  <section id="projetos" class="projetos">
+    <h2>Nossos Projetos</h2>
+
+    <!-- CARROSSEL -->
+    <div class="carrossel">
+      <div class="slides">
+        <div class="slide ativo">
+          <img src="imagens/projeto1.jpg" alt="Projeto 1">
+          <div class="legenda">
+            <h3>Residência Moderna</h3>
+            <p>Design contemporâneo e eficiente.</p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="imagens/projeto2.jpg" alt="Projeto 2">
+          <div class="legenda">
+            <h3>Casa Sustentável</h3>
+            <p>Projetada para aproveitar cada recurso natural.</p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="imagens/projeto3.jpg" alt="Projeto 3">
+          <div class="legenda">
+            <h3>Edifício Comercial</h3>
+            <p>Modernidade e funcionalidade para o seu negócio.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="botao anterior" id="anterior">❮</button>
+      <button class="botao proximo" id="proximo">❯</button>
+
+      <div class="indicadores">
+        <span class="indicador ativo" data-indice="0"></span>
+        <span class="indicador" data-indice="1"></span>
+        <span class="indicador" data-indice="2"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO CONTATO -->
+  <section id="contato" class="contato">
+    <h2>Entre em Contato</h2>
+    <p>Fale conosco e transforme seu projeto em realidade.</p>
+    <a href="https://api.whatsapp.com/send?phone=5517999999999&text=Olá, gostaria de saber mais!"
+      target="_blank" class="botao">Falar no WhatsApp</a>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape">
+    <p>&copy; 2025 Rodrigo Germano Eng. Civil — Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+
+</html>
