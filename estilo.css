@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url(imagens/plantabaixateste.jpg);/*EDITAR IMAGEM DE FUNDO*/
+  background-color: #ccc;/*EDITAR IMAGEM DE FUNDO*/
   color: #222;
 }
 
@@ -38,7 +38,7 @@ body {
 }
 
 .cabecalho .menu a:hover {
-  color: #00c9a7;
+  color: #002843;
 }
 
 .botao-menu {
@@ -61,6 +61,7 @@ body {
   width: 200px;
   border-radius: 8px 0 0 8px;
   overflow: hidden;
+  z-index: 999999;
 }
 
 .menu-mobile a {
@@ -99,8 +100,8 @@ body {
 
 .botao {
   display: inline-block;
-  background: #00c9a7;
-  color: white;
+  background: #0065a8;
+  color: #fff;
   padding: 12px 24px;
   border-radius: 30px;
   text-decoration: none;
@@ -109,7 +110,7 @@ body {
 }
 
 .botao:hover {
-  background: #00a88a;
+  background: #002843;
 }
 
 /* PROJETOS */
@@ -232,10 +233,12 @@ body {
 @media (max-width: 768px) {
   .cabecalho .menu {
     display: none;
+    
   }
 
   .botao-menu {
     display: block;
+    color:rgb(0, 0, 0)
   }
 
   .inicio h1 {
